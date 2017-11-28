@@ -1,2 +1,2 @@
 # typescript-go
-typescript repo
+* typescript repo

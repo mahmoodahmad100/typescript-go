@@ -1,7 +1,10 @@
-function msg(msg)
+function loop(num)
 {
-	console.log(msg);
+	for(let i = 0; i < num; i++){
+		console.log(i);
+	}
+
+	console.log('the last value is: ' + i);
 }
 
-
-msg('hello world');
+loop(6);

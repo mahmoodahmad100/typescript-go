@@ -5,6 +5,15 @@ function loop(num) {
     console.log('the last value is: ' + i);
 }
 loop(6);
+// rewrite loop function (arrow function)
+var altLoop = function (num) {
+    for (var i = 0; i < num; i++) {
+        console.log(i);
+    }
+    console.log('the last value is: ' + i);
+};
+altLoop(6);
+/*******************************************/
 var Colors;
 (function (Colors) {
     Colors["yellow"] = "y";
@@ -13,6 +22,7 @@ var Colors;
 ;
 var font = Colors.yellow;
 console.log(font);
+/*******************************************/
 var msg;
 function print(string) {
     console.log(string);
@@ -20,3 +30,4 @@ function print(string) {
 msg = 'welcome';
 print(msg);
 print(msg);
+/*******************************************/ 

@@ -13,3 +13,10 @@ var Colors;
 ;
 var font = Colors.yellow;
 console.log(font);
+var msg;
+function print(string) {
+    console.log(string);
+}
+msg = 'welcome';
+print(msg);
+print(msg);

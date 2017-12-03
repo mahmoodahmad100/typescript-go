@@ -13,6 +13,9 @@ var altLoop = function (num) {
     console.log('the last value is: ' + i);
 };
 altLoop(6);
+// arrow function
+var hi = function () { return console.log('hi'); };
+hi();
 /*******************************************/
 var Colors;
 (function (Colors) {

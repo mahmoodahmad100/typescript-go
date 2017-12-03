@@ -22,6 +22,10 @@ let altLoop = (num) => {
 
 altLoop(6);
 
+// arrow function
+
+let hi = () => console.log('hi');
+hi();
 /*******************************************/
 
 enum Colors {yellow = 'y', blue = 5456};

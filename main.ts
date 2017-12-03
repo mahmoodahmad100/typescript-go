@@ -10,6 +10,18 @@ function loop(num)
 loop(6);
 
 
+// rewrite loop function (arrow function)
+
+let altLoop = (num) => {
+	for(let i = 0; i < num; i++){
+		console.log(i);
+	}
+
+	console.log('the last value is: ' + i);	
+}
+
+altLoop(6);
+
 /*******************************************/
 
 enum Colors {yellow = 'y', blue = 5456};

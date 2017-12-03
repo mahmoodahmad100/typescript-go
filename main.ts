@@ -10,12 +10,15 @@ function loop(num)
 loop(6);
 
 
+/*******************************************/
+
 enum Colors {yellow = 'y', blue = 5456};
 
 let font = Colors.yellow;
 
 console.log(font);
 
+/*******************************************/
 
 let msg;
 function print(string){
@@ -26,3 +29,5 @@ msg = 'welcome';
 
 print((<string> msg));
 print((msg as string));
+
+/*******************************************/

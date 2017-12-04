@@ -49,7 +49,8 @@ print((msg as string));
 /*******************************************/
 interface User{
 	name:string,
-	phone:number
+	phone:number,
+	update: () => void
 }
 
 let login = (user:User) =>{

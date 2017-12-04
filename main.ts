@@ -62,13 +62,16 @@ class User{
 	name:string;
 	phone:number;
 
+	constructor(name: string, phone:number){
+		this.name  = name;
+		this.phone = phone;
+	}
+
 	updateInfo(){
 		console.log('name: ' + this.name + ' phone: ' + this.phone );
 	}
 }
 
-let user = new User();
-user.name = "mahmood";
-user.phone = 54664;
+let user = new User("mahmood", 54664);
 user.updateInfo();
 /*******************************************/

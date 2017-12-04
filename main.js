@@ -33,4 +33,6 @@ function print(string) {
 msg = 'welcome';
 print(msg);
 print(msg);
-/*******************************************/ 
+var login = function (user) {
+    // the logic is here
+};

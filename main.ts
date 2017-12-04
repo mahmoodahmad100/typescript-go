@@ -47,3 +47,11 @@ print((<string> msg));
 print((msg as string));
 
 /*******************************************/
+interface User{
+	name:string,
+	phone:number
+}
+
+let login = (user:User) =>{
+	// the logic is here
+}

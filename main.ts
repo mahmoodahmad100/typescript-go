@@ -62,7 +62,7 @@ class User{
 	name:string;
 	phone:number;
 
-	constructor(name: string, phone:number){
+	constructor(name?: string, phone?:number){
 		this.name  = name;
 		this.phone = phone;
 	}
@@ -72,6 +72,6 @@ class User{
 	}
 }
 
-let user = new User("mahmood", 54664);
+let user = new User();
 user.updateInfo();
 /*******************************************/

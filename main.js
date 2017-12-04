@@ -41,6 +41,12 @@ var User = /** @class */ (function () {
     function User() {
     }
     User.prototype.updateInfo = function () {
+        console.log('name: ' + this.name + ' phone: ' + this.phone);
     };
     return User;
 }());
+var user = new User();
+user.name = "mahmood";
+user.phone = 54664;
+user.updateInfo();
+/*******************************************/ 

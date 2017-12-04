@@ -47,6 +47,6 @@ var User = /** @class */ (function () {
     };
     return User;
 }());
-var user = new User("mahmood", 54664);
+var user = new User();
 user.updateInfo();
 /*******************************************/ 

@@ -56,3 +56,13 @@ interface User{
 let login = (user:User) =>{
 	// the logic is here
 }
+
+// rewrite the User interface by using class
+class User{
+	name:string;
+	phone:number;
+
+	updateInfo(){
+
+	}
+}

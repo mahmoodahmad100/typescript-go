@@ -1,6 +1,6 @@
 function loop(num)
 {
-	for(let i = 0; i < num; i++){
+	for(var i = 0; i < num; i++){
 		console.log(i);
 	}
 
@@ -13,7 +13,7 @@ loop(6);
 // rewrite loop function (arrow function)
 
 let altLoop = (num) => {
-	for(let i = 0; i < num; i++){
+	for(var i = 0; i < num; i++){
 		console.log(i);
 	}
 
@@ -63,6 +63,12 @@ class User{
 	phone:number;
 
 	updateInfo(){
-
+		console.log('name: ' + this.name + ' phone: ' + this.phone );
 	}
 }
+
+let user = new User();
+user.name = "mahmood";
+user.phone = 54664;
+user.updateInfo();
+/*******************************************/

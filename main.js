@@ -36,3 +36,11 @@ print(msg);
 var login = function (user) {
     // the logic is here
 };
+// rewrite the User interface by using class
+var User = /** @class */ (function () {
+    function User() {
+    }
+    User.prototype.updateInfo = function () {
+    };
+    return User;
+}());

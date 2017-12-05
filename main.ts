@@ -48,8 +48,8 @@ print((msg as string));
 
 /*******************************************/
 interface User{
-	name:string,
-	phone:number,
+	username:string,
+	password:number,
 	update: () => void
 }
 
@@ -59,8 +59,8 @@ let login = (user:User) =>{
 
 // rewrite the User interface by using class
 class User{
-	name:string;
-	phone:number;
+	private name:string;
+	private phone:number;
 
 	constructor(name?: string, phone?:number){
 		this.name  = name;

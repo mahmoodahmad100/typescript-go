@@ -60,7 +60,18 @@ let login = (user:User) =>{
 // rewrite the User interface by using class
 class User{
 	constructor(private name?: string, private phone?:number){
-		
+
+	}
+
+	getName()
+	{
+		return this.name;
+	}
+
+	setName(val){
+		if(val == 'hi')
+			throw new Error('hi should\'nt be a name');
+		this.name = val;	
 	}
 
 	updateInfo(){
@@ -69,5 +80,7 @@ class User{
 }
 
 let user = new User();
+user.getName();
+user.setName('ddd');
 user.updateInfo();
 /*******************************************/

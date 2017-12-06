@@ -59,12 +59,8 @@ let login = (user:User) =>{
 
 // rewrite the User interface by using class
 class User{
-	private name:string;
-	private phone:number;
-
-	constructor(name?: string, phone?:number){
-		this.name  = name;
-		this.phone = phone;
+	constructor(private name?: string, private phone?:number){
+		
 	}
 
 	updateInfo(){

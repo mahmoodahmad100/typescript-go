@@ -38,25 +38,29 @@ var login = function (user) {
 };
 // rewrite the User interface by using class
 var User = /** @class */ (function () {
-    function User(name, phone) {
-        this.name = name;
-        this.phone = phone;
+    function User(_name, _phone) {
+        this._name = _name;
+        this._phone = _phone;
     }
-    User.prototype.getName = function () {
-        return this.name;
-    };
-    User.prototype.setName = function (val) {
-        if (val == 'hi')
-            throw new Error('hi should\'nt be a name');
-        this.name = val;
-    };
+    Object.defineProperty(User.prototype, "name", {
+        get: function () {
+            return this._name;
+        },
+        set: function (val) {
+            if (val == 'hi')
+                throw new Error('hi should\'nt be a name');
+            this._name = val;
+        },
+        enumerable: true,
+        configurable: true
+    });
     User.prototype.updateInfo = function () {
-        console.log('name: ' + this.name + ' phone: ' + this.phone);
+        console.log('name: ' + this._name + ' phone: ' + this._phone);
     };
     return User;
 }());
 var user = new User();
-user.getName();
-user.setName('ddd');
+user.name;
+user.name = "fsda";
 user.updateInfo();
 /*******************************************/ 

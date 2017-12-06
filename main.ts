@@ -59,28 +59,28 @@ let login = (user:User) =>{
 
 // rewrite the User interface by using class
 class User{
-	constructor(private name?: string, private phone?:number){
+	constructor(private _name?: string, private _phone?:number){
 
 	}
 
-	getName()
+	get name()
 	{
-		return this.name;
+		return this._name;
 	}
 
-	setName(val){
+	set name(val){
 		if(val == 'hi')
 			throw new Error('hi should\'nt be a name');
-		this.name = val;	
+		this._name = val;	
 	}
 
 	updateInfo(){
-		console.log('name: ' + this.name + ' phone: ' + this.phone );
+		console.log('name: ' + this._name + ' phone: ' + this._phone );
 	}
 }
 
 let user = new User();
-user.getName();
-user.setName('ddd');
+user.name;
+user.name = "fsda";
 user.updateInfo();
 /*******************************************/

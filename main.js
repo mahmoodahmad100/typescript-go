@@ -42,11 +42,21 @@ var User = /** @class */ (function () {
         this.name = name;
         this.phone = phone;
     }
+    User.prototype.getName = function () {
+        return this.name;
+    };
+    User.prototype.setName = function (val) {
+        if (val == 'hi')
+            throw new Error('hi should\'nt be a name');
+        this.name = val;
+    };
     User.prototype.updateInfo = function () {
         console.log('name: ' + this.name + ' phone: ' + this.phone);
     };
     return User;
 }());
 var user = new User();
+user.getName();
+user.setName('ddd');
 user.updateInfo();
 /*******************************************/ 

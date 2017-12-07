@@ -1,3 +1,5 @@
+import { User } from './user';
+
 function loop(num)
 {
 	for(var i = 0; i < num; i++){
@@ -47,13 +49,13 @@ print((<string> msg));
 print((msg as string));
 
 /*******************************************/
-interface User{
+interface Person{
 	username:string,
 	password:number,
 	update: () => void
 }
 
-let login = (user:User) =>{
+let login = (user:Person) =>{
 	// the logic is here
 }
 

@@ -1,4 +1,4 @@
-class User{
+export class User{
 	constructor(private _name?: string, private _phone?:number){
 
 	}

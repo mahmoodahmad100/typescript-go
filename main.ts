@@ -1,4 +1,5 @@
 import { User } from './user';
+import { Like } from './like';
 
 function loop(num)
 {
@@ -66,4 +67,8 @@ let user = new User();
 user.name;
 user.name = "fsda";
 user.updateInfo();
+/*******************************************/
+let like = new Like(5);
+like.like();
+like.like();
 /*******************************************/
